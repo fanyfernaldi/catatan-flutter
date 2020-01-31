@@ -1,0 +1,15 @@
+-container kalau di web itu seperti <div>. 
+
+-container yang tidak memiliki anak maka ukurannya akan full selayar. 
+Jika container tersebut memiliki anak, misal child: Text('Hello') maka ukuran dari containernya akan se anak tersebut
+"Container with no children try to be big as possible. Container with children size themselves to their children"
+
+-property yang baisanya ada di Container:
+height, width, margin, padding  //nah ukurannya ini dalam bentuk pixel
+
+Tools yang berguna jika mengatur layouting misal margin atau padding : FLUTTER INSPECTOR (kalau di web= inspect element)
+
+INGAT!, Container hanya boleh mempunyai 1 child. Kenapa? karena termasuk single-child layout widget..
+yang bisa multiple children yaitu: Column dan Rows
+
+ 

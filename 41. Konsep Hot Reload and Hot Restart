@@ -1,0 +1,4 @@
+//Hot Reload jika tidak ada widget build maka tidak akan dapat berjalan
+
+//Hot Reload : reload halaman, jika ada data maka datanya tetep lanjut (dari build)
+//Hot Refresh : refresh halama, jika ada data maka datanya dimulai dari awal (dari runApp)

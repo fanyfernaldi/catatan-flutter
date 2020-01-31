@@ -7,9 +7,9 @@ Jika container tersebut memiliki anak, misal child: Text('Hello') maka ukuran da
 -property yang baisanya ada di Container:
 height, width, margin, padding  //nah ukurannya ini dalam bentuk pixel
 
-Tools yang berguna jika mengatur layouting misal margin atau padding : FLUTTER INSPECTOR (kalau di web= inspect element)
+-Tools yang berguna jika mengatur layouting misal margin atau padding : FLUTTER INSPECTOR (kalau di web= inspect element)
 
-INGAT!, Container hanya boleh mempunyai 1 child. Kenapa? karena termasuk single-child layout widget..
+-INGAT!, Container hanya boleh mempunyai 1 child. Kenapa? karena termasuk single-child layout widget..
 yang bisa multiple children yaitu: Column dan Rows
 
  

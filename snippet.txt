@@ -1,0 +1,2 @@
+1. alt+enter letakkan kursor mouse di suatu widget lalu select widget tsb. tekan alt+enter, maka akan keluar menu magic 
+misal: wrap with new widget, maka akan widget yang diselect akan diapit oleh widget baru. kita tinggal namain

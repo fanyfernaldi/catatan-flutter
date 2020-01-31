@@ -1,0 +1,28 @@
+CATATAN UDEMY FLUTTER
+
+- manfaatkan github untuk mendapatkan resource flutter. 
+
+//membuat i am rich app sederhana (gambar diamond layar di tengah)
+void main(){
+	runApp(
+		MaterialApp(
+			home: Scaffold(
+				backgroundColor: Colors.blueGrey,
+				appBar: AppBar(
+					title: Text('I am Rich'),
+					backgroundColor: Colors.blueGrey[900],
+				), //AppBar
+				body: Center(
+					child: Image(
+						//jika mau ambil gambar dari internet:
+						//image: NetworkImage('https...'),
+						//jika mau ambil gambar dari lokal komputer
+						image: AssetImage('images/diamond.jpg'),
+					), //Image
+				), //Center
+			), //Scaffold
+		), //MaterialApp
+	);
+}
+
+- kelemahan membuat app didalam main function: tidak bisa menggunakan hot reload

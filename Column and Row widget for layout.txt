@@ -1,0 +1,35 @@
+Widget Row dan Widget Column Termasuk ke multi-child-layout widget. Sehingga didalamnya dapat dibuat banyak widget.
+- jika pakai widget column maka kita akan membangun materialAppnya dari atas ke bawah
+- jika pakai widget Row maka kita akan membangun materialAppnya dari kiri ke kanan
+
+- di dalam widget Row atau Column biasanya ada widget mainAxisAlignment. (untuk mengatur posisinya)
+Secara default mainAxisAlignment jika tidak ditulis maka mainAxisAlignmentnya itu start atau 
+mainAxisAlignment: MainAxisAlignment.start, yang artinya dimulai dari start
+//nah start suatu layar itu dimulai dari pojok kiri atas.
+
+-beberapa contoh mainAxisAlignment
+mainAxisAlignment: MainAxisAlignment.start
+mainAxisAlignment: MainAxisAlignment.end
+mainAxisAlignment: MainAxisAlignment.spaceBetween
+mainAxisAlignment: MainAxisAlignment.spaceEvently
+
+- mainAxisAlignment untuk widget column itu vertical. Untuk Row itu horizontal, untuk mengatur propertinya bisa menggunakan
+property yang saya sebutkan di atas.
+
+- CrossAxisAlinment
+untuk row maka akan mengatur posisi vertikal dari suatu widget. propertinya sama seperti main axis alignment
+untuk Column maka akan mengatur posisi horizontal dari suatu widget. propertinya sama seperti main axis alignment
+
+-mengatur jarak antar widget(memberi spasi antar container), gunakan widget SizedBox
+untuk Row:
+SizedBox(
+  width:20.0
+)
+untuk Column:
+SizedBox(
+  height: 20.0
+)
+
+
+
+

@@ -1,2 +1,4 @@
 1. alt+enter letakkan kursor mouse di suatu widget lalu select widget tsb. tekan alt+enter, maka akan keluar menu magic 
 misal: wrap with new widget, maka akan widget yang diselect akan diapit oleh widget baru. kita tinggal namain
+
+2. klik pada suatu class laku tekan ctrl+j(untuk mac), ctrl+q(untuk windows). Maka akan keluar dokumentasi yang menjelaskan apa saja yang dapat kita isi di dalam class tersebut

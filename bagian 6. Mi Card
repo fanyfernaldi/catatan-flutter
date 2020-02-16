@@ -106,6 +106,8 @@ class MyApp extends StatelessWidget{
 <!-- end Mi Card v.1-->
 
 #Mi Card versi 2 (menggunakan Widget Card untuk menampung informasi)
+
+<!-- start Mi Card v.2 -->
 import 'package:flutter/material.dart';
 
 void main(){
@@ -188,5 +190,6 @@ class MyApp extends StatelessWidget{
     );
   }
 }
+<!-- end Mi Card v.2 -->
 
 Note: pada v.2 di atas, saya menggunakan ListTile, sebagai pengganti Widget Padding

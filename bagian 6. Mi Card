@@ -1,7 +1,10 @@
 Disini ada 2 versi Mi Card, yang v.1 menggunakan container sebagai pembungkus informasinya, sedangkan
                             yang v.2 menggunakan kelas Card sebagai pembungkus informasinya.
+-perbedaan pake card dan ngga pakai card apa?
+  jika menggunakan card maka bagian ujung dari pembungkusnya bisa diroundedkan (tidak lancip) dan pembungkusnya dapat
+  dibuat seperti ada bayangannya
 
-#Mi Card versi 1 (menggunakan kelas Container untuk menampung informasi)
+#Mi Card versi 1 (menggunakan kelas Container untuk membungkus informasi)
 <!-- start Mi Card v.1 -->
 import 'package:flutter/material.dart';
 

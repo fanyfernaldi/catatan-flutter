@@ -1,5 +1,6 @@
 1. alt+enter letakkan kursor mouse di suatu widget lalu select widget tsb. tekan alt+enter, maka akan keluar menu magic 
 misal: wrap with new widget, maka akan widget yang diselect akan diapit oleh widget baru. kita tinggal namain
+-Kalau di VSCODE, caranya: Klik widget yang mau dapit paddiing/dimargin/diremove/diapitwidget baru, lalu di sebelah kiri akan ada gambar lampu, klik saja nanti disitu ada pilihan menu magicnya... ini sangat berguna
 
 2. klik pada suatu class laku tekan ctrl+j(untuk mac), ctrl+q(untuk windows). Maka akan keluar dokumentasi yang menjelaskan apa saja yang dapat kita isi di dalam class tersebut
 

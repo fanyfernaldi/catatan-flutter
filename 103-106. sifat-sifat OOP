@@ -1,0 +1,22 @@
+1. Abstraction
+– Abstraction adalah suatu cara untuk melihat suatu object dalam bentuk yang lebih sederhana. 
+  Sebagai contoh kita tidak melihat sebuah mobil sebagai ribuan komponen elektronik, sistem mekanik dengan empat buah ban, 
+  jok, stir kemudi dan sebagainya. Dengan Abstraction, suatu sistem yang kompleks dapat dipandang sebagai kumpulan 
+  subsistem-subsistem yang lebih sederhana, seperti halnya mobil merupakan suatu sistem yang terdiri atas berbagai subsistem, 
+  seperti subsistem kemudi, subsistem pengereman dan sebagainya.
+
+NAH Dalam dart komponen-komponen ini dibagi kedalam berbagai class
+
+2. Enkapsulation
+   - Membungkus property/method/class/objek menjadi private/public.. dalam dart tidak ada protected
+   - agar menjadi private, cukup tambahkan _ (underscore) sebelum nama property/method/class/objek
+   - tujuan private agar bisa diakses oleh class itu sendiri
+   - jika ingin agar bisa diakses oleh class lain buatlah method getApaYgDiPrivate
+
+3. Inheritance
+   - merupakan penurunan sifat dari parent class ke child class. sifat yang dimaksud disini yaitu property / method.
+   - pada child class, kita bisa menambahkan property / method lain
+   - format penulisan : class namachildclass extends parentclass {..}
+   
+4. Polymorphism
+   - Suatu class child dapat merubah bentuk yang diturunkan oleh parent class, ini yang biasa disebut dengan overriding method/property

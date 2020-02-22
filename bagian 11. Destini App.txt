@@ -1,6 +1,17 @@
 <!-- 
 Destini App merupakan permainan cerita, setiap jawaban yang kita pilih akan menentukan jalan cerita selanjutnya.
 Dalam program ini, ada 3 file.. yaitu: main.dart, story.dart, story_brain.dart
+
+didalamnya ada:
+-konsep abstraksi, yaitu dengan membagi2 code dalam beberapa class
+-konsep enksapsulasi, yaitu membungkus kode agar private sehingga hanya bisa diakses oleh class itu sendiri.. agar bisa diakses
+ oleh class lain, maka dibuatkan method get
+-membuat konstruktor yang memiliki argumen
+-if/else statement
+-membuat objek dari class yang telah dibuat
+-menambahkan background image di aplikasinya
+-visibility button, untuk menampilkan dan menghilangkan button.. jika kita visible: false suatu button maka button tersebut 
+ hilang namun layoutnya masih sama
 -->
 
 ============================================================================================

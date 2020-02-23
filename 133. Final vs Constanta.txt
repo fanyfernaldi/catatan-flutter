@@ -1,0 +1,4 @@
+Perbedaan Final (final) dan Konstanta (const) ?
+- Final dapat dideklarasikan kapan saja, 
+- sedangkan konstanta hanya dapat dideklarasikan saat program tersebut pertama kali berjalan, ketika program sudah berjalan lalu
+  kita mendeklarasikan dan mengakses konstanta, maka tidak bisa

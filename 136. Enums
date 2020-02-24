@@ -1,0 +1,10 @@
+Enum merupakan tipe data, yang digunakan jika kita membuat kodingan yang mengharuskan kita untuk memilih.
+Enum harus diubuat di luar kelas
+Penulisan enum harus diawali dengan huruf besar, misal: enum Gender
+contoh membuat enum: enum Gender{male, female}    //disini kita membuat hanya tersedia 2 pilihan Gendr yaitu male dan female
+
+contoh penerapan enum pada pembuatan fungsi: 
+void updateColour(Gender selectedGender) //disini selectedGender merupakan variabel yang kita buat menggunakan enum Gender
+
+contoh pemanggilan variabel enum berdasarkan fungsi yang kita buat di atas:
+updateColour(Gender.male) //disini artinya kita memilih enum Gander dengan value male.

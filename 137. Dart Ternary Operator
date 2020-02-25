@@ -1,0 +1,20 @@
+Ternari Operator digunakan untuk menyingkatkan kodingan yang bercabang (if/else)
+
+Format ternary operator:
+Condition ? dothisiftrue : dothisiffalse
+
+//contoh1 dengan kodingan biasa: 
+bool jackBauerIsAwesome == true;
+
+if(jackBauerIsAwesome == true){
+  print('That\'s great');
+}else{
+  print('Oh no!');
+}
+
+//contoh dengan ternary operator
+jackBauerIsAwesome ? print('that\'s great') : print('Oh no!');
+//contoh lain:
+int myAge = 12;
+bool canBuyAlcohol = myAge > 21 ? true : false;  
+print(canBuyAlcohol)  //output : false

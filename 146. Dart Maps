@@ -15,3 +15,4 @@ Map<String, int> phoneBook{
 #penerapan manggil:
 phoneBook['Kyle'];
 
+Note: pada pembuatan route name (untuk multiple screen), pendeklarasian route namenya sebenarnya menggunakan map

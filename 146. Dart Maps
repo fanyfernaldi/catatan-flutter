@@ -1,0 +1,17 @@
+Map hampir sama seperti List, namun pada map kita bisa menentukan key dan valuenya
+#Format penulisan Map
+Map<KeyType, ValueType> mapName{
+  Key: Value
+}
+#Cara memanggil
+mapName[Key];
+
+#contoh penerapan:
+Map<String, int> phoneBook{
+  'Kyle'  : 123456789,
+  'Ken'   : 987654321,
+  'Dave'  : 212122121,
+}
+#penerapan manggil:
+phoneBook['Kyle'];
+

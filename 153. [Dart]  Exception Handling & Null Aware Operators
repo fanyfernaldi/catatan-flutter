@@ -29,4 +29,8 @@ jika kode di atas tidak memakai try and catch maka outputnya:
 Uncaught exception:   //ada ininya. ini ada uncoughtnya karena kita tidak menangkap exceptionnya
 FormatException: Invalid double abc
 
-
+#Kenapa try catch bisa berjalan? bukankah harus ada yang melempar agar bisa menangkap?
+Ya, sebenarnya agar kita bisa try catch, maka ada syntax yang benama throw untuk melempar(throw)
+kesalahan tersebut sehingga kita bisa menangkap(catch), namun pada kodingan di atas sebenarnya 
+thrownya sudah ada di dalam parse sehingga sehingga kita tidak usah mengisinisalisasi lagi, 
+kebanyakan memang throw sudah terembbed kedalam suatu syntax

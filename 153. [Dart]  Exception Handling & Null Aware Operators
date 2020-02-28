@@ -1,0 +1,32 @@
+#penulisan exception handling :
+try{
+  //Do something that might fail
+}
+catch (e){
+  //Catchan exceptions that occur
+}
+
+#penulisan Null Aware Operator:
+someVariable ?? defaultValue  
+cara baca:
+jika someVariable null maka defaultValue akan tereksekusi, namun
+jika someVariable bukan null maka someVariable akan tereksekusi
+
+#contoh: 
+main(){
+  String myString = 'abc';
+
+  try {
+    double myStringAsADouble = double.parse(myString);  //parse fungsinya untuk mengubah dari String ke tipedata yang kit inginkan, disini kita ubah jadi double
+  } catch(e){ //karena 'abc' tidak bisa diubah menjadi double maka catch(e) akan tereksekusi
+    print(e); //dalam real code nanti, kita tidak hanya nulis print(e) doang ya.. 
+  }
+}
+//output: 
+FormatException: Invalid double abc
+
+jika kode di atas tidak memakai try and catch maka outputnya:
+Uncaught exception:   //ada ininya. ini ada uncoughtnya karena kita tidak menangkap exceptionnya
+FormatException: Invalid double abc
+
+

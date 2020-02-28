@@ -10,6 +10,7 @@ Metod yang menggunakan future harus mereturn suatu nilai.
 setelah Future ini tereksekusi, namun jika ingin kode dibawahnya menunggu maka harus menggunakan await
 
 await = digunakan dengan async, fungsinya agar kode dibawahnya menunggu kode yang memakai await selesai dijalankan, jadi seperti sync
+kita hanya dapat await pada method, namun method terseubut harus mereturn Future
 
 NAH async, await, dan Future ini biasa dikolaborasikan bersama jika kita menggunakan async.
 

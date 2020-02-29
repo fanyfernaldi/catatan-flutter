@@ -1,0 +1,18 @@
+Install packagenya, link: https://flutter.dev/docs/cookbook/networking/fetch-data
+replace package di pubspec.yaml, import packagenya di file yang akan memakai package tersebut
+
+contoh kodingan untuk mengambil data cuaca dari API dari website openwathermap.org :
+//membuat fungsi getData (nama terserah)
+void getData() async {
+    //membuat variabel response(namanya terserah sebenere) dengan tipe data Response. Tipe data respone berasal dari http.dart, untuk menyimpan metod get. di dalam class Response itu ada property2 yang sangat berguna untuk kepentingan http
+    //karena metod get disimpan dalam variabel, maka harus dikasih async dan await agar variabel yang menggunakan dibawahnya harus menunggu metod getnya selesai
+    //disini pakai http.Response, http.get, kenapa ada httpnya? karena di import package di paling atas kita menggunakan as http, tujuannya agar menandai kalo yang di http. itu berasal dari http.dart
+    http.Response response = await http.get('https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=b6907d289e10d714a6e88b30761fae22'); //menggunakan API di website tertera, untuk mendapatkan data cuaca, longitude, latitude, dkk
+    
+    if (response.statusCode == 200){    //statusCode merupakan property milik class Response, jika 200 maka sukses. adabanyak statuscode (ini sangat kental hubungannya dengan dunia per httpan / pernetworkan) misal 200,404, dkk
+      String data = response.body;
+      print(data);
+    }else{
+      print(response.statusCode);
+    }
+  }

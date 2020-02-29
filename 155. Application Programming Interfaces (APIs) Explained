@@ -1,0 +1,5 @@
+API (Application Programming Interfaces), memungkinkan kita untuk saling berbagi source/data. Asalkan
+si perequest data mempunyai key untuk mengakses data dari penyedia API.
+
+kita bisa mengambil data dari penyedia API dan kita juga bisa memasukkan data ke penyedia API, asal
+kita memiliki key dari APInya

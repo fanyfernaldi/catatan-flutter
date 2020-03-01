@@ -1,0 +1,37 @@
+mempassing data dari screen 1 ke screen 2. Disini kasusnya screen 2 itu merupakan statefullWidget :
+
+contoh :
+#di screen 1 :
+Navigator.push(context, MaterialPageRoute(builder: (context) {
+  return LocationScreen(locationWeather: weatherData,); //mengisi konstruktor
+}));
+
+#di screen 2 (yaitu pada class LocationScreen yang mengextends statefulWidget)
+class LocationScreen extends StatefulWidget {
+  LocationScreen({this.locationWeather}); //konstruktor
+
+  final locationWeather;
+
+  @override
+  _LocationScreenState createState() => _LocationScreenState();
+}
+
+
+//nah perbedaannya passing data di stateless dan stateful yaitu disini.. 
+//kalo di statful jika kita ingin memanggil variabel locationWeather di atas, maka kita harus menambah kata widget didepannya
+class _LocationScreenState extends State<LocationScreen> {
+
+  @override
+  void initState() {
+    super.initState();
+
+    //Disini, penulisannya harus didahului oleh widget terlebih dahulu, karena ini merupakan statefulWidget
+    //dimana konstruktornya dideklarasikan di luar locationscreenstate, yaitu di class locationscreen.
+    //Keculai kalo ini stateless widget maka kita bisa mengakses locationWeathernya ngga usah pake kata widget didepan
+    updateUI(widget.locationWeather);   //DISINI BRO PERBEDAANYA, ADA widget nya.
+  }
+
+ @override
+  Widget build(BuildContext context) {
+  }
+}

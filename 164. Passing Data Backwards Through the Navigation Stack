@@ -1,0 +1,40 @@
+#Mempassing data ke screen sebelumnya, yaitu dengan Navigator.pop
+
+Contoh: 
+
+-screen 1 nya yaitu location_screen.dart
+-screen 2 nya yaitu city_screen.dart
+
+#DI SCREEN 1 (Location_screen.dart):
+ // KASUS1, kalo kita cuman pindah ke halaman city_screen.dart saja:
+ onPressed: () async { //pakai async ya, karena dibawah kita pakai await
+  Navigator.push(context, MaterialPageRoute(builder: (context){
+  return CityScreen();
+  }));
+ };
+ 
+  // KASUS2, kalo ternyata di cityScreen mempassing data backward, maka data yang dipassing akan disimpan ke variabel typedName (nama variabelnya bebas ya)
+  onPressed: () async {
+    var typedName = await Navigator.push(context, MaterialPageRoute(builder: (context){ 
+      return CityScreen();
+    }));
+
+    if(typedName != null){
+      var weatherData = await weather.getCityWeather(typedName);
+      updateUI(weatherData);
+    }
+  },
+
+#DI SCREEN 2 (city_screen.dart)
+  //KASUS 1, KEMBALI TANPA MEMPASSING DATA
+  onPressed: () {
+    Navigator.pop(context); 
+  },
+  
+  //KASUS 2, PASSING DATA cityName ke halaman sebelumnya (location_sreen.dart)
+  onPressed: () {
+    Navigator.pop(context, cityName); //note: disini cityName itu variabel yang udah diisi sebelumnya ya..
+  },
+  
+Jika ingin melihat sourcode nya: https://github.com/londonappbrewery/Clima-Flutter-Completed/blob/master/lib/
+Jika ingin melihat sourcode yang sudah dikasih keterangan bisa dibuka di komputer

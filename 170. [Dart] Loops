@@ -1,0 +1,61 @@
+Ada 2 cara loops, yang pertama loopin biasa seperti bahasa C, //ex: for(int i=0; i< 5; i++);
+cara yang kedua looping semua item yang ada di dalam list, seperti foreach tapi bukan foreach, //ex: for(String fruit in fruits);
+
+disini saya akan memberi contoh cara yang ke2 saja, karena yang 1 inssyaAllah sudah paham
+
+format penulisan:
+for(tipenya variabelnya in listnya){
+  //do something with variabelnya   //udah, disini variabelnya itu udah manggil 1 per 1 dari item yang ada di listnya
+}
+
+#CONTOH 1: (kode untuk looping semua item yang ada di List, namun saya kasih teks 'pie' disemua item tersebut
+List<Stirng> fruits = [
+  'apple',
+  'pear',
+  'orange',
+  'grape',
+  'banana'
+];
+
+main(){
+  pieMaker();
+}
+
+void pieMaker(){
+  for(String fruit in fruits){
+    print(fruit + 'pie');
+  }
+}
+//output:
+apple pie
+pear pie
+orange pie
+grape pie
+banan pie
+
+#CONTOH 2: (kode looping untuk mencetak angka yang sama di antara winningNumbers dan ticket1/ticket2
+List<int> winningNumbers = [12, 6, 34, 22, 41, 9];
+
+void main(){
+  List<int> ticket1 = [45, 2, 9, 18, 12, 33];
+  List<int> ticket2 = [41, 17, 26, 32, 7, 35];
+  
+  checkNumbers(ticket1);
+}
+
+void checkNumbers(List<int> myNumbers){
+  
+int jumlahNomorSama = 0;
+
+  for(int myNumber in myNumbers){
+    for(int winningNumber in winningNumbers){
+      if(myNumber == winningNumber){
+        jumlahNomorSama++;
+      }
+    }
+  }
+  print(jumlahNomorSama);
+}
+
+//output: 
+2   //berarti ada 2 angka yang sama antara ticket1 dan winningNumber

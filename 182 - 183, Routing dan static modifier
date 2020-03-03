@@ -68,7 +68,7 @@ import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatefulWidget{
   
-  static String id = 'welcome_screen';  //NAH INI NIH Penerapan cara 3, kalo yg cara 2 ngga ada staticnya
+  static const String id = 'welcome_screen';  //NAH INI NIH Penerapan cara 3, kalo yg cara 2 ngga ada staticnya
 
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
@@ -88,5 +88,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           ...
           dst
 
+NOTE: 
+pada class Welcome Screen di atas kita pakai const pada variabel id (ex: static const String id).
+Ketika kita membuat class, maka kita tidak boleh membuat variabel dengan modifier const (kalo mau buat, buatlah di luar class). 
+Karena tidak boleh pakai const di dalam class maka saya kasih static di depannya
 
 

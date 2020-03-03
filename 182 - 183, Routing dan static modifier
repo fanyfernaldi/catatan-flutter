@@ -1,0 +1,92 @@
+=======================================
+Contoh Routing sekaligus penjelasannya
+=======================================
+
+import 'package:flutter/material.dart';
+import 'package:flash_chat/screens/welcome_screen.dart';
+import 'package:flash_chat/screens/login_screen.dart';
+import 'package:flash_chat/screens/registration_screen.dart';
+import 'package:flash_chat/screens/chat_screen.dart';
+
+void main() => runApp(FlashChat());
+
+class FlashChat extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData.dark().copyWith(
+        textTheme: TextTheme(
+          body1: TextStyle(color: Colors.black54),
+        ),
+      ),
+      //ketika memakai initialRoute, maka kita tidak boleh memakai home:
+
+      // [Routing] CARA 1 (CARA BIASA), kelemahannya yaitu jika initialRoutenya typo, maka tidak ada pemberitahuan. AGAR typonya bisa diketahui maka pakailah cara 2 atau 3 di bawah ini
+      // initialRoute: 'welcome_screen',
+      // routes: {
+      //   'welcome_screen' : (context) => WelcomeScreen(), //artinya current context, return to WelcomeScreen()
+      //   'registration_screen' : (context) => RegistrationScreen(),
+      //   'login_screen' : (context) => LoginScreen(),
+      //   'chat_screen' : (context) => ChatScreen()
+
+      // [Routing] CARA 2, dengan membuat objek, sehingga jika value dari initialRoute nya typo maka akan keluar pemberitahuan
+      // initialRoute: WelcomeScreen().id,  //id merupakan variabel yang sudah dibuat di dalam class WelcomeScreen
+      // routes: {
+      //   WelcomeScreen().id : (context) => WelcomeScreen(), //artinya current context, return to WelcomeScreen()
+      //   'registration_screen' : (context) => RegistrationScreen(),
+      //   'login_screen' : (context) => LoginScreen(),
+      //   'chat_screen' : (context) => ChatScreen()
+
+
+      // [Routing] CARA 3, tanpa membuat objek, tujuannya sama seperti cara 2 agar ketika value dari initialRoutenya typo maka akan keluar pemberitahuan
+      initialRoute: WelcomeScreen.id, //id merupakan variabel yang sudah dibuat di dalam class WelcomeScreen, bedanya sama CARA 2, disini idnya sudah diberi modifieer static
+      routes: {
+        WelcomeScreen.id : (context) => WelcomeScreen(), //artinya current context, return to WelcomeScreen()
+        'registration_screen' : (context) => RegistrationScreen(),
+        'login_screen' : (context) => LoginScreen(),
+        'chat_screen' : (context) => ChatScreen()
+      }
+    );
+  }
+}
+
+
+=======================================
+Contoh static sekaligus penjelasannya
+=======================================
+-Nah dari CARA 3 di atas, kita memanggil variabel id (ex: WelcomeScreen.id) yang dibuat di class WelcomeScreen,
+-Cara 3 di atas, variabel idnya sebenarnya menggunakan modifier static (seperti pada #kodingan di bawah)
+-UNTUK APA VARIABEL STATIC TSB? digunakan agar variabel tersebut milik class, bukan milik objek
+
+-BEDANYA CARA 2 DAN 3? 
+* Pada cara 2 (id tidak pakai static), karena dia memakai objek maka semua yang ada di class WelcomeScreen akan terpanggil
+* pada cara 3 (id pakai static), sehingga yang dari class WelcomeScreen terpanggil hanya variabel id saja 
+
+#kodingan :
+
+import 'package:flutter/material.dart';
+
+class WelcomeScreen extends StatefulWidget{
+  
+  static String id = 'welcome_screen';  //NAH INI NIH Penerapan cara 3, kalo yg cara 2 ngga ada staticnya
+
+  @override
+  _WelcomeScreenState createState() => _WelcomeScreenState();
+}
+
+class _WelcomeScreenState extends State<WelcomeScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 24.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          ...
+          ...
+          ...
+          dst
+
+
+

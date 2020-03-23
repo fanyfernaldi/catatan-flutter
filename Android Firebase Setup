@@ -1,0 +1,19 @@
+Disini kita akan belajar menggunakan firebase,
+disini, di dalam firebase, yang digunakan yaitu cloud firestore dan authentication
+
+1. Login ke google firebase
+2. Add project, isi form-formnya.
+Project baru telah dibuat, sekarang saatnya menambahkan firebase ke aplikasi anda
+3. Klik icon android untuk menambahkan firebase ke aplikasi anda. Isi form-formnya
+4. untuk form Daftarkan aplikasi: 
+    - kolom nama paket android diisi dengan nama applicationId project anda. Lokasinya ada di /android/app/build.gradle 
+      defaultnya yaitu "com.example.namaprojectanda", nah example diganti saja dengan nama anda atau bebas  //example merupakan nama company anda
+    - kolom nama aplikasi dan kolom sertifikat penandatanganan debug SHA-1 tidak udah diisi
+    - klik daftarkan aplikasi
+5. untuk form Menambahkan firebase ke aplikasi android
+    - download file konfigurasinya (google-services.json), pindah ke /android/app/ /*ingat file harus bernama google-servie.json*/
+    - ikuti langkah2nya
+6. Selesai
+7. Jalankan programnya, jika berhasil dijalankan maka konfigurasi berhasil
+                        namun jika error, bisa dilihat di https://blog.londonappbrewery.com/troubleshooting-firebase-x-flutter-a974b2645689
+      

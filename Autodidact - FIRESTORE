@@ -1,0 +1,10 @@
+Untuk membuat query yang efisien:
+Big collection, Small documents, tapi collection dapat menampung jutaan dokumen dan tetap dapat membuat query yang efisien
+
+Firestore memberi 3 cara dasar untuk memodelkan data anda
+1 root collection
+2 embed data directly on the document it self //normalnya max 1 MB
+3 sub collection in a document
+
+Cloud firestore are noSQL. 
+Pada Firestore tidak bisa join query tapi kita bisa mereferensikan dokumen yang berelasi dan menaruhnya sebagai secondary query

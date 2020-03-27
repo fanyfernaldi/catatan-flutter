@@ -1,0 +1,13 @@
+jika di udemy angela yu diajarkan mengenai auth dengan email dan password, kali ini kita akan mencoba auth lewat google sign in
+Setupnya hampir sama dengan email dan password, namun ada tambahan sedikit
+Langkah2 setup
+1. Buat project baru, beri nama, beri google analythic atau tidak bebas
+2. Setelah membuat project baru. klik menu authentication pilih sign-in method, pilih yang google lalu di enable
+3. Kembali ke home, tambahkan aplikasi anda (klik yang android karena kita akan ngoding buat android app)
+4. BEDANYA DISINI. Di form 'daftarkan aplikasi'. Bagian nama aplikasi, bagian sertifikat penandatanganan debug SHA-1 harus diisi
+    Note:
+    1. Pada kolom sertifikat penandatanganan debug SHA-1, harus diisi dengan kode SHA-1. Untuk mendapatkan kode tersebut klik '?' 
+       disamping kolom, lalu 'lihat halaman'. 
+    2. Dibawah tulisan 'To get the debug certificate fingerprint:' copy lalu paste di terminal, enter dan akan keluar kode SHAnya
+    3. Copy code SHA tersebut, NAH kode ini yang akan dipaste di kolom sertifikat penandatanganan debug SHA.
+5. Langkah selanjutnya sama saja, silahkan diikuti saja

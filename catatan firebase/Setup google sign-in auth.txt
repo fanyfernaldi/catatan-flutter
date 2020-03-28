@@ -11,3 +11,4 @@ Langkah2 setup
     2. Dibawah tulisan 'To get the debug certificate fingerprint:' copy lalu paste di terminal, enter dan akan keluar kode SHAnya
     3. Copy code SHA tersebut, NAH kode ini yang akan dipaste di kolom sertifikat penandatanganan debug SHA.
 5. Langkah selanjutnya sama saja, silahkan diikuti saja
+6. import package google_sign_in masukin ke pubspec.yaml
